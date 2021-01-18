@@ -1,5 +1,7 @@
 package io.github.talelin.latticy.model;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -8,21 +10,21 @@ import lombok.Setter;
 
 import java.util.Date;
 
-
+@TableName("banner_item")
 @Getter
 @Setter
-@TableName("banner") //修正查询的表明
-public class BannerDO {
+public class BannerItemDO {
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     private String name;
 
-    private String title;
-
-    private String description;
-
     private String img;
+
+    private String keyword;
+
+    private String type;
 
 
     @JsonIgnore
@@ -35,4 +37,5 @@ public class BannerDO {
     @TableLogic //软删除
     private Date deleteTime;
 
+    private Long bannerId;
 }
