@@ -35,8 +35,9 @@ public class BannerController {
     public CreatedVO create(@RequestBody @Validated BannerDTO bannerDTO) {
         BannerDO bannerDO = new BannerDO();
         BeanUtils.copyProperties(bannerDTO, bannerDO);
-        this.bannerService.save(bannerDO);
+        this.bannerService.create(bannerDO);
         return new CreatedVO();
+
     }
     //模块名、权限名
     //@LoginRequired 登录限制注解
@@ -58,6 +59,7 @@ public class BannerController {
     @GetMapping("/{id}")
     @LoginRequired
     @PermissionMeta(value = "查询Banner")
+    @Logger(template = "{user.username}查询了Banner数据")
     public BannerWithItemsBO getWithItems(@PathVariable @Positive Long id) {
         return bannerService.getWithItems(id);
     }
@@ -76,6 +78,7 @@ public class BannerController {
 
     @GetMapping("/page")
     @LoginRequired
+
     public PageResponseVO<BannerDO> getBanners(@RequestParam(required = false, defaultValue = "0")
                                @Min(value = 0) Integer page,
                            @RequestParam(required = false, defaultValue = "10")

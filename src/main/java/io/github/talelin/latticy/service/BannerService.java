@@ -32,6 +32,10 @@ public class BannerService extends ServiceImpl<BannerMapper, BannerDO> {
         this.getBaseMapper().deleteById(id);
     }
 
+    public void create(BannerDO bannerDO) {
+        this.save(bannerDO);
+    }
+
     public void update(BannerDTO dto, Long id) {
         BannerDO bannerDO = this.getById(id);
         if(bannerDO ==null) {
