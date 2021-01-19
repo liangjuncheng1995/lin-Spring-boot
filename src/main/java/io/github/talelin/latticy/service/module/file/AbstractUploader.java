@@ -1,4 +1,4 @@
-package io.github.talelin.latticy.module.file;
+package io.github.talelin.latticy.service.module.file;
 
 import io.github.talelin.autoconfigure.exception.*;
 import org.springframework.util.MultiValueMap;

@@ -13,7 +13,7 @@ import java.util.Date;
 @TableName("banner_item")
 @Getter
 @Setter
-public class BannerItemDO {
+public class BannerItemDO extends BaseModel{
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;

@@ -1,6 +1,6 @@
 package io.github.talelin.latticy.extension.file;
 
-import io.github.talelin.latticy.module.file.Uploader;
+import io.github.talelin.latticy.service.module.file.Uploader;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

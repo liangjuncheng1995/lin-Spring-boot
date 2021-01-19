@@ -1,4 +1,4 @@
-package io.github.talelin.latticy.module.message;
+package io.github.talelin.latticy.service.module.message;
 
 import io.github.talelin.latticy.model.UserDO;
 import io.github.talelin.latticy.service.GroupService;

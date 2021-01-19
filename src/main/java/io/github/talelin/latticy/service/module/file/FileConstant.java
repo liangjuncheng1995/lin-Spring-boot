@@ -1,4 +1,4 @@
-package io.github.talelin.latticy.module.file;
+package io.github.talelin.latticy.service.module.file;
 
 /**
  * 文件相关常量值

@@ -2,8 +2,8 @@ package io.github.talelin.latticy.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import io.github.talelin.latticy.bo.FileBO;
-import io.github.talelin.latticy.module.file.FileConstant;
-import io.github.talelin.latticy.module.file.Uploader;
+import io.github.talelin.latticy.service.module.file.FileConstant;
+import io.github.talelin.latticy.service.module.file.Uploader;
 import io.github.talelin.latticy.mapper.FileMapper;
 import io.github.talelin.latticy.model.FileDO;
 import io.github.talelin.latticy.service.FileService;

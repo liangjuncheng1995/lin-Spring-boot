@@ -1,4 +1,4 @@
-package io.github.talelin.latticy.module.message;
+package io.github.talelin.latticy.service.module.message;
 
 import com.auth0.jwt.exceptions.AlgorithmMismatchException;
 import com.auth0.jwt.exceptions.InvalidClaimException;
@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-import static io.github.talelin.latticy.module.message.MessageConstant.USER_KEY;
+import static io.github.talelin.latticy.service.module.message.MessageConstant.USER_KEY;
 
 /**
  * @author pedro@TaleLin

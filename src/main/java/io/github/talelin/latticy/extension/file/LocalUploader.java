@@ -1,9 +1,9 @@
 package io.github.talelin.latticy.extension.file;
 
-import io.github.talelin.latticy.module.file.AbstractUploader;
-import io.github.talelin.latticy.module.file.FileConstant;
-import io.github.talelin.latticy.module.file.FileProperties;
-import io.github.talelin.latticy.module.file.FileUtil;
+import io.github.talelin.latticy.service.module.file.AbstractUploader;
+import io.github.talelin.latticy.service.module.file.FileConstant;
+import io.github.talelin.latticy.service.module.file.FileProperties;
+import io.github.talelin.latticy.service.module.file.FileUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 

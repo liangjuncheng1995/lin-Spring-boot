@@ -1,4 +1,4 @@
-package io.github.talelin.latticy.module.file;
+package io.github.talelin.latticy.service.module.file;
 
 import org.springframework.util.DigestUtils;
 import org.springframework.util.unit.DataSize;

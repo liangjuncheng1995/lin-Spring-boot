@@ -1,6 +1,6 @@
 package io.github.talelin.latticy;
 
-import io.github.talelin.latticy.module.file.FileProperties;
+import io.github.talelin.latticy.service.module.file.FileProperties;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package io.github.talelin.latticy.module.message;
+package io.github.talelin.latticy.service.module.message;
 
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
